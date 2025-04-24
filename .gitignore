@@ -173,3 +173,9 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 .DS_Store
+
+# datasets
+ga_hits.csv
+ga_hits.pkl
+ga_sessions.csv
+ga_sessions.csv
