@@ -6,7 +6,7 @@
 
 ## 📁 Структура репозитория
 ```
-sberautopodpiska-analysis/
+MIFIHackatonSberAutoSubscriptionAnalysis/
 ├── data/                    # Исходные данные (игнорируются Git)
 ├── notebooks/               # Jupyter-ноутбуки
 │   ├── data_preprocessing/  # Очистка и подготовка данных
