@@ -179,3 +179,4 @@ ga_hits.csv
 ga_hits.pkl
 ga_sessions.csv
 ga_sessions.pkl
+data/processed_data/*.pkl
