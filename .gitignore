@@ -184,3 +184,5 @@ data/processed_data/*.pkl
 *.csv
 data/sample_processed_data/*.pkl
 *.pkl
+*.pkl
+*.csv
