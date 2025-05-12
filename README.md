@@ -22,7 +22,6 @@ MIFIHackatonSberAutoSubscriptionAnalysis/
 │       ├── catboost_info/            # Подпапка с вспомогательными артефактами (графики, логи Optuna)
 │       ├── catboost.ipynb            # Эксперименты с CatBoost + Optuna-тюнинг гиперпараметров
 │       └── model_data_json.ipynb     # Черновой блокнот для работы с JSON метаданными модели
-
 ├── README.md                         # Обзор проекта: цели, структура, быстрый старт
 ├── requirements.txt                  # Список всех pip-зависимостей для воспроизводимости окружения
 ├── src                               # Исходный код приложения и вспомогательные модули
