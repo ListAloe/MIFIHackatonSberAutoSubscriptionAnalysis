@@ -3,22 +3,31 @@
 Проект направлен на предоставление REST-API для онлайн-предсказания вероятности конверсии пользователя (оставление заявки, заказ звонка и др.) на основании признаков сессии и хитов Google Analytics.
 
 ---
-
+MIFIHackatonSberAutoSubscriptionAnalysis/
 ## 📁 Структура репозитория
 ```bash
 
 MIFIHackatonSberAutoSubscriptionAnalysis/
-├── data/
-│   ├── eda\_data/            # Данные после EDA (pickle)
-│   ├── processed\_data/      # Данные после препроцессинга (pickle)
-│   └── model\_data/          # Предобученная модель (.cbm)
-├── src/
-│   ├── data\_processing/     # (опционально) вспомогательные скрипты
-│   ├── models/              # (опционально) скрипты обучения
-│   └── app/                 # FastAPI-приложение
-│       └── app.py           # главный файл API
-├── requirements.txt         # Зависимости
-└── README.md                # Инструкция по установке и запуску API
+├── data
+│   ├── model_data
+│   │   ├── catboost_optuna_m1.cbm    # Скомпилированная бинарная модель Catboost
+│   │   └── catboost_optuna_m1.json   # Метаданные модели
+├── LICENSE                           # Лицензия проекта (MIT)
+├── notebooks                         # Jupyter-ноутбуки для различных этапов анализа
+│   ├── data_preprocessing
+│   │   └── data_preprocessing.ipynb  # Ноутбук: чтение raw_data → очистка → сохранение processed_data.pkl
+│   ├── EDA
+│   │   └── eda.ipynb                 # Ноутбук: визуализации и статистический анализ признаков
+│   └── modeling
+│       ├── catboost_info/            # Подпапка с вспомогательными артефактами (графики, логи Optuna)
+│       ├── catboost.ipynb            # Эксперименты с CatBoost + Optuna-тюнинг гиперпараметров
+│       └── model_data_json.ipynb     # Черновой блокнот для работы с JSON метаданными модели
+
+├── README.md                         # Обзор проекта: цели, структура, быстрый старт
+├── requirements.txt                  # Список всех pip-зависимостей для воспроизводимости окружения
+├── src                               # Исходный код приложения и вспомогательные модули
+│   ├── app
+│   │   └── app.py                    # FastAPI-сервис
 
 ````
 
