@@ -1,0 +1,89 @@
+{
+  "model": "catboost_sessions_v2.cbm",
+  "level": "session",
+  "trained_on": "all sessions with hits, 2021-05-19 → 2021-12-31",
+  "iterations": 3298,
+  "target_actions": [
+    "sub_car_claim_click",
+    "sub_car_claim_submit_click",
+    "sub_open_dialog_click",
+    "sub_custom_question_submit_click",
+    "sub_call_number_click",
+    "sub_callback_submit_click",
+    "sub_submit_success",
+    "sub_car_request_submit_click"
+  ],
+  "features": [
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_adcontent",
+    "utm_keyword",
+    "device_category",
+    "device_os",
+    "device_brand",
+    "device_browser",
+    "geo_country",
+    "geo_city",
+    "source_medium",
+    "device_category_os",
+    "visit_number",
+    "is_new_visitor",
+    "visit_hour",
+    "visit_weekday",
+    "is_weekend",
+    "is_organic",
+    "screen_w",
+    "screen_h",
+    "screen_ratio"
+  ],
+  "cat_features": [
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_adcontent",
+    "utm_keyword",
+    "device_category",
+    "device_os",
+    "device_brand",
+    "device_browser",
+    "geo_country",
+    "geo_city",
+    "source_medium",
+    "device_category_os"
+  ],
+  "num_features": [
+    "visit_number",
+    "is_new_visitor",
+    "visit_hour",
+    "visit_weekday",
+    "is_weekend",
+    "is_organic",
+    "screen_w",
+    "screen_h",
+    "screen_ratio"
+  ],
+  "roc_auc": {
+    "test": 0.7048,
+    "test_time_split": 0.6283
+  },
+  "roc_auc_all_models": {
+    "Случайный 70/30": {
+      "Бейзлайн: CR канала": 0.6361,
+      "Логистическая регрессия": 0.6812,
+      "CatBoost": 0.7048
+    },
+    "По времени": {
+      "Бейзлайн: CR канала": 0.5368,
+      "Логистическая регрессия": 0.6277,
+      "CatBoost": 0.6283
+    }
+  },
+  "threshold": 0.060491,
+  "test_at_threshold": {
+    "precision": 0.0935,
+    "recall": 0.2101,
+    "f1": 0.1294,
+    "lift": 3.22
+  }
+}
